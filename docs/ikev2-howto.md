@@ -459,6 +459,15 @@ If you get an error when trying to connect, see [Troubleshooting](#ikev2-trouble
 
 **Note:** These steps were contributed by [@Unix-User](https://github.com/Unix-User). It is recommended to run terminal commands via an SSH connection, e.g. via Putty.
 
+For RouterOS v7.x, you need to convert the xxx.p12 file to xxx.pem
+
+/root
+sudo openssl pkcs12 -in xxx.p12 -out xxx.pem -nodes
+
+#No pass required
+
+After that you can download the file to your computer and then copy it to the mikrotikFor RouterOS v7.x 
+
 1. Securely transfer the generated `.p12` file to your computer.
 
    <details>
